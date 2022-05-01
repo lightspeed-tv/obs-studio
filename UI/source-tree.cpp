@@ -1692,11 +1692,11 @@ void SourceTree::AddGroup()
 void SourceTree::UpdateNoSourcesMessage()
 {
 	std::string darkPath;
-	GetDataFilePath("themes/Dark/no_sources.svg", darkPath);
+	GetDataFilePath("themes/Dark/no_bitches.svg", darkPath);
 
 	QColor color = palette().text().color();
 	bool lightTheme = (color.redF() < 0.5);
-	QString file = lightTheme ? ":res/images/no_sources.svg"
+	QString file = lightTheme ? ":res/images/no_bitches.svg"
 				  : darkPath.c_str();
 	iconNoSources.load(file);
 
